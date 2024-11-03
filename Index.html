@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aerolínea - Reserva tu vuelo</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="logo-nav">
+            <h1>Avianca</h1>
+            <nav>
+                <ul>
+                    <li><a href="#vuelos">Vuelos</a></li>
+                    <li><a href="#checkin">Check-In</a></li>
+                    <li><a href="#promociones">Promociones</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Promocional -->
+    <section class="banner">
+        <h2>nuevas rutas, infinitas posibilidades</h2>
+        <p>preparate para descubrir Chicago,Tulum,Guyana y muchos más.</p>
+        <button>Ver Promociones</button>
+    </section>
+
+    <!-- Formulario de Búsqueda de Vuelos -->
+    <section id="busqueda-vuelos">
+        <h2>Encuentra tu Vuelo</h2>
+        <form>
+            <label for="origen">Origen:</label>
+            <input type="text" id="origen" name="origen" required>
+
+            <label for="destino">Destino:</label>
+            <input type="text" id="destino" name="destino" required>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="pasajeros">Pasajeros:</label>
+            <input type="number" id="pasajeros" name="pasajeros" required min="1">
+
+            <button type="submit">Buscar Vuelo</button>
+        </form>
+    </section>
+
+    <!-- Servicios Destacados -->
+    <section id="servicios">
+        <h2>Servicios Destacados</h2>
+        <div class="servicios-container">
+            <div class="servicio-item">
+                <h3>Equipaje</h3>
+                <p>Consulta nuestras políticas de equipaje.</p>
+            </div>
+            <div class="servicio-item">
+                <h3>Check-In</h3>
+                <p>Realiza el check-in en línea para mayor comodidad.</p>
+            </div>
+            <div class="servicio-item">
+                <h3>Promociones</h3>
+                <p>Descubre nuestras ofertas exclusivas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Tu Aerolínea. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

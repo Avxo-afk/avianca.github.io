@@ -1,0 +1,191 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #DA291C;
+}
+
+/* Encabezado */
+header {
+    background-color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px solid #DA291C;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.logo-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #DA291C;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #DA291C;
+}
+
+/* Banner de Promociones */
+.banner {
+    background-image: url('Ofertas.png'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 4rem;
+    text-align: left;
+}
+
+.banner h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.banner button {
+    padding: 0.75rem 2rem;
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.banner button:hover {
+    background-color: #c44224;
+}
+
+/* Formulario de Búsqueda de Vuelos */
+#busqueda-vuelos {
+    max-width: 80%;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#busqueda-vuelos form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem; /* Espacio entre los elementos */
+}
+
+#busqueda-vuelos label {
+    display: none; /* Ocultar etiquetas para estilo compacto */
+}
+
+#busqueda-vuelos input,
+#busqueda-vuelos button {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    flex: 1; /* Hacer que los elementos ocupen el mismo ancho */
+}
+
+#busqueda-vuelos button {
+    background-color: #DA291C;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    flex: 0 0 auto; /* Evitar que el botón se expanda */
+}
+
+#busqueda-vuelos button:hover {
+    background-color: #DA291C;
+}
+
+
+#busqueda-vuelos h2 {
+    color: #DA291C;
+    margin-bottom: 1rem;
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 0.75rem 2rem;
+    background-color: #DA291C;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #DA291C;
+}
+
+/* Servicios Destacados */
+#servicios {
+    background-color: #f3f4f6;
+    padding: 2rem;
+    text-align: center;
+}
+
+.servicios-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.servicio-item {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.servicio-item h3 {
+    color: #DA291C;
+    margin-bottom: 0.5rem;
+}
+
+/* Pie de Página */
+footer {
+    background-color: #DA291C;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
