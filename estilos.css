@@ -115,32 +115,35 @@ body {
     color: #333;
 }
 
-/* Alineación de los campos de búsqueda */
+/* Alineación de los campos de búsqueda: elementos en línea */
 .search-inputs {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly; /* Distribuye el espacio equitativamente */
     align-items: center;
-    gap: 1rem;
-    flex-wrap: wrap; /* Asegura que los elementos no se desborden en pantallas pequeñas */
+    gap: 0.5rem; /* Reduce el espacio entre los elementos */
+    flex-wrap: nowrap; /* Asegura que los elementos permanezcan en una sola fila */
 }
 
-.passenger-select {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.search-form input,
+.search-form select,
+.search-form button {
+    flex: 1; /* Ajusta cada elemento para que ocupe el mismo ancho */
+    margin: 0; /* Elimina márgenes adicionales */
+    max-width: 150px; /* Define un tamaño máximo para cada elemento */
 }
 
-.passenger-select label {
-    font-size: 1rem;
-    margin-right: 0.5rem;
+.search-form button {
+    flex: 0; /* Mantiene el botón con un tamaño fijo */
+    max-width: 120px; /* Asegura que el botón no se expanda demasiado */
+    margin-left: 0.5rem; /* Agrega un pequeño espacio entre el botón y los campos */
 }
 
 .passenger-select select {
-    padding: 0.5rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    width: 100%; /* Ajusta el tamaño del selector al contenedor */
+    max-width: none;
+    margin: 0;
 }
+
 
 /* Mejoras de responsividad */
 @media (max-width: 768px) {
@@ -345,6 +348,39 @@ body {
     .carousel-item {
         height: 200px; /* Menor altura en pantallas pequeñas */
     }
+    /* Preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff; /* Fondo del preloader */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999; /* Asegura que esté por encima de todo */
+}
+
+#preloader .spinner {
+    width: 50px;
+    height: 50px;
+    border: 6px solid rgba(0, 0, 0, 0.1); /* Borde gris claro */
+    border-top-color: #d71921; /* Borde superior con color primario */
+    border-radius: 50%;
+    animation: spin 20s linear infinite; /* Animación giratoria */
+}
+
+/* Animación giratoria */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 }
 
 
